@@ -366,7 +366,7 @@ aside {
 
 /* Amenities */
 .icon_style {
-  font-size: 2vw;
+  font-size: 2em;
   color: var(--colorPrimary);
   padding-inline: inherit;
 }
