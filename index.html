@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/elixer/css/bootstrap.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/elixer/css/style.css" />
-    <link rel="stylesheet" href="/elixer/css/animation.css" />
 
     <!-- Bootstrap JS -->
     <script defer src="/elixer/js/bootstrap.bundle.min.js"></script>
@@ -35,11 +34,6 @@
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("BnRoAjGd5ec2E2VQn");
-      })();
-    </script>
     <script src="/elixer/js/mail.js"></script>
   </head>
   <body
@@ -224,12 +218,109 @@
         </div>
       </section>
 
-      <!--  -->
+      <!-- Sidebar -->
+      <aside class="sidebar-container">
+        <div class="sidebar">
+          <!-- Sidebar Top Links -->
+          <div class="sidebar-top pb-2">
+            <ul class="nav nav-fill side-top-block">
+              <li class="nav-item" data-bs-toggle="modal" data-bs-target="#popupModal">
+                Pre Register
+              </li>
+              <li class="nav-item ps-1">
+                <a href="tel:+919082586679" class="text-decoration-none text-white">
+                  <i class="fa-solid fa-phone me-2"></i> +919082586679
+                </a>
+              </li>
+            </ul>
+            <div class="container d-flex justify-content-center">
+              <button
+                class="btn btn-sm btn-info micro-form-btn-sm effectGradient effectScale mt-1"
+                data-bs-toggle="modal"
+                data-bs-target="#popupModal">
+                <i class="fa-solid fa-phone me-2"></i>
+                Instant Call Back
+              </button>
+            </div>
+          </div>
+
+          <!--Enquire Form  -->
+          <div class="enquire-section">
+            <span class="d-block text-center text-black fw-bold my-2">
+              Get The Best Quote
+            </span>
+            <div class="container">
+              <form id="contact-form" class="text-center">
+                <div class="mb-3">
+                  <label for="user_name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control inputStyle shadow-none"
+                    name="user_name"
+                    id="user_name"
+                    placeholder="Name"
+                    autocomplete="off"
+                    required />
+                </div>
+                <div class="mb-3">
+                  <label for="user_email" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control inputStyle shadow-none"
+                    name="user_email"
+                    id="user_email"
+                    placeholder="Email Address"
+                    autocomplete="off" />
+                </div>
+                <div class="mb-3">
+                  <label for="contact_number" class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control inputStyle shadow-none"
+                    name="contact_number"
+                    id="contact_number"
+                    placeholder="Phone Number"
+                    autocomplete="off"
+                    required />
+                </div>
+                <div class="mb-3">
+                  <label for="pickup_location" class="form-label">Pickup Address</label>
+                  <input
+                    type="text"
+                    class="form-control inputStyle shadow-none"
+                    name="pickup_location"
+                    id="pickup_location"
+                    placeholder="Pickup Address"
+                    autocomplete="off"
+                    required />
+                </div>
+                <div class="mb-3">
+                  <label for="date_time" class="form-label">Date Time</label>
+                  <input
+                    type="datetime-local"
+                    class="form-control inputStyle shadow-none"
+                    name="date_time"
+                    id="date_time"
+                    placeholder="Date Time"
+                    autocomplete="off"
+                    required />
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary download-btn m-2 effectMoveGradient btn btn-info micro-form-btn enqModal effectScale">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </aside>
 
       <!--Overview Section  -->
       <section id="overview" class="container p-4 shadow-sm">
-        <h3>At Powai - L&T Elixir Reserve</h3>
-        <p>
+        <h3 class="sub-heading">At Powai - L&T Elixir Reserve</h3>
+        <p class="overview-para">
           The elegant condominium L&T Elixir Reserve has amenities that are thoughtfully
           planned for contemporary people. To help residents live a joyous life, The L&T
           Elixir Reserve in Powai offers 2, 3 and 4 BHK units with opulent fixtures and
@@ -254,8 +345,8 @@
           </button>
         </div>
 
-        <h3>ABOUT L&T REALTY</h3>
-        <p>
+        <h3 class="sub-heading">About L&T Realty</h3>
+        <p class="overview-para">
           Established in 2011, l&t Realty is the real estate arm of the $21 billion Larsen
           and Toubro and a trendsetter amidst real estate developers in India. With an
           extensive portfolio spanning 70 mn. sqft. across Residential, Commercial and
@@ -528,49 +619,49 @@
             <div class="col-md-3 g-3 gal-img">
               <img
                 class="img-fluid floor-img"
-                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image1.webp"
+                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image2.webp"
                 alt="" />
             </div>
 
             <div class="col-md-3 g-3 gal-img">
               <img
                 class="img-fluid floor-img"
-                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image1.webp"
+                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image3.webp"
                 alt="" />
             </div>
 
             <div class="col-md-3 g-3 gal-img">
               <img
                 class="img-fluid floor-img"
-                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image1.webp"
+                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image4.webp"
                 alt="" />
             </div>
 
             <div class="col-md-3 g-3 gal-img">
               <img
                 class="img-fluid floor-img"
-                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image1.webp"
+                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image5.webp"
                 alt="" />
             </div>
 
             <div class="col-md-3 g-3 gal-img">
               <img
                 class="img-fluid floor-img"
-                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image1.webp"
+                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image6.webp"
                 alt="" />
             </div>
 
             <div class="col-md-3 g-3 gal-img">
               <img
                 class="img-fluid floor-img"
-                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image1.webp"
+                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image7.webp"
                 alt="" />
             </div>
 
             <div class="col-md-3 g-3 gal-img">
               <img
                 class="img-fluid floor-img"
-                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image1.webp"
+                src="/elixer/img/gallery/lnt-elixir-reserve-powai-image8.webp"
                 alt="" />
             </div>
           </div>
@@ -600,7 +691,7 @@
         </div>
 
         <!-- Location Features -->
-        <div class="container locaton-features">
+        <div class="container location-features">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
             <div class="col my-2">
               <i class="fa-solid fa-location-dot"></i>
@@ -647,6 +738,66 @@
           </div>
         </div>
       </section>
+
+      <!-- About Section -->
+      <section id="nri" class="container p-4 shadow-sm">
+        <div class="container d-flex justify-content-center">
+          <img
+            class="footer-logo img-fluid"
+            src="/elixer/img/logo/lnt-elixir-reserve-powai-logo.webp"
+            alt="" />
+        </div>
+        <div class="container w-100 mt-2">
+          <p class="fs-5 fw-bold text-center">NRI Services</p>
+          <p class="about-text">
+            We provides better, excellent, and different service from what is usual
+            especially to NRI's. As we have huge team exclusively for NRI clients, We
+            understand your demand and desire deeply and provides you with profound
+            facilities as per your need and preferences.We provide better, greater, and
+            different service from what is usual especially to NRI's. As we have huge team
+            exclusively for NRI clients, we understand your demand and desire deeply and
+            provide you with profound facilities as per your need and preferences. We have
+            a different massive team for NRI client thus they perform their role as per
+            their convenience of meeting and guide them with their budgeting, location
+            confusion, configuration selection and documentation process. With us you have
+            to sit and enjoy your hot coffee and rest is our duty
+          </p>
+          <p class="fs-5 fw-bold text-center">RERA Information</p>
+          <div class="container text-center">
+            <div class="row">
+              <div class="rera-box">
+                <div class="rera-img">
+                  <img
+                    src="/elixer/img/qr/elixir_QR_CODE.webp"
+                    loading="lazy"
+                    style="max-width: 100%; height: 100px; display: inline-block" />
+                </div>
+
+                <div class="rera-details">
+                  <div>
+                    <span class="rera_heading1">L & T Elixir Reserve MahaRERA: </span>
+                    <span class="rera_heading2">RERA No : P51800013504</span>
+                  </div>
+
+                  <div>
+                    <span class="rera_heading1"> Company Rera No: </span>
+                    <span class="rera_heading2">RERA No : A51800001892</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-center rera_info">
+            Project MahaRERA number is available on the website
+            <a href="https://maharera.mahaonline.gov.in/">
+              https://maharera.mahaonline.gov.in</a
+            >
+            under registered projects.
+          </p>
+        </div>
+      </section>
+
       <!-- Modal -->
       <div
         class="modal fade"
@@ -669,7 +820,10 @@
             <!-- Modal Body -->
             <div class="modal-body">
               <div class="container text-center">
-                <img src="/crown-dombivli/assets/img/Crown-U.png" alt="" width="150px" />
+                <img
+                  src="/elixer/img/logo/lnt-elixir-reserve-powai-logo.webp"
+                  alt=""
+                  width="150px" />
                 <p class="mt-2">Register Here And Avail The Best Offers!!</p>
               </div>
               <div class="container">
@@ -763,8 +917,46 @@
         </div>
       </div>
     </main>
-    <footer>
+
+    <footer class="footer p-4">
       <!-- Footer -->
+      <p class="disclaimer">
+        Disclaimer: We are an authorized marketing partner for this project. Provided
+        content is given by respective owners and this website and content is for
+        information purpose only and it does not constitute any offer to avail for any
+        services. Prices mentioned are subject to change without prior notice and
+        properties mentioned are subject to availability. You can expect a call, SMS or
+        emails on details registered with us.
+      </p>
+      <hr />
+      <p class="copyright-text">
+        2023 © Copyright - All Rights Reserved. <br />
+        <a href="/elixer/pages/privacy-policy.html">Terms &amp; Conditions</a>
+        |
+        <a href="/elixer/pages/privacy-policy.html">Privacy Policy</a>
+        |
+        <a href="/elixer/pages/cookies-policy.html">Cookies Policy</a>
+      </p>
     </footer>
+
+    <!-- Mobile Footer Fixed Button -->
+    <div class="container-fluid fixed-bottom action-footer-container">
+      <ul class="nav nav-fill action-footer">
+        <li class="nav-item ps-1">
+          <a href="https://wa.me/919082586679" class="text-decoration-none text-white">
+            <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
+          </a>
+        </li>
+        <li class="nav-item ps-1">
+          <a href="tel:+919082586679" class="text-decoration-none text-white">
+            <i class="fa-solid fa-phone me-2"></i> Call Us
+          </a>
+        </li>
+
+        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#popupModal">
+          <i class="fa-solid fa-download nav-icon"></i> Brochure
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

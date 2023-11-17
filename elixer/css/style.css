@@ -30,6 +30,7 @@ html {
   */
 }
 
+/* For Desktop */
 @media only screen and (min-width: 990px) {
   header,
   main,
@@ -120,7 +121,7 @@ aside {
 /* InfoBox */
 .info-box {
   padding-bottom: 20px;
-  color: var(--colorWhite);
+  color: var(--colorBlack);
 }
 .info-status {
   font-size: 1em;
@@ -143,7 +144,7 @@ aside {
   padding: 3px 4px 0 0;
 }
 
-/* Gray Card */
+/* Color Card */
 .card-d {
   width: 95%;
   justify-content: center;
@@ -209,7 +210,7 @@ aside {
   line-height: 28px;
 }
 .offer-bg-animation {
-  color: #fff;
+  color: var(--colorWhite);
   display: block;
   background: linear-gradient(
     -45deg,
@@ -229,6 +230,7 @@ aside {
 /* InfoBox */
 @media only screen and (min-width: 990px) {
   .info-box {
+    color: var(--colorWhite);
     width: 25vw;
     text-align: center;
     position: absolute;
@@ -240,7 +242,6 @@ aside {
     display: inline-block;
     background-color: var(--colorBackgroundBlack);
     border-radius: 15px;
-
     border: 3px solid var(--colorBorderWhite); /*gradient Border animation */
     /* padding-top: 1.5vw; */
   }
@@ -271,15 +272,90 @@ aside {
   font-size: 1.7em;
   text-align: center;
 }
+/* For Desktop */
 @media only screen and (min-width: 990px) {
   .section-heading {
     font-size: 2.5vw;
   }
 }
 
+/* Sidebar */
+
+/* Enquire Section */
+.enquire-section {
+  width: 100%;
+  margin-top: 15px;
+  padding-top: 10px;
+  text-align: center;
+  /* background: linear-gradient(-45deg, #f1f1f1, #c8c8c8, #f1f1f1, #c8c8c8); */
+  background: linear-gradient(
+    -45deg,
+    var(--colorWhite),
+    var(--colorBorderWhite),
+    var(--colorWhite),
+    var(--colorBorderWhite)
+  );
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 3s ease infinite;
+  -moz-animation: Gradient 3s ease infinite;
+  animation: Gradient 3s ease infinite;
+}
+
+.form-label {
+  display: none;
+}
+.inputStyle {
+  font-size: 1em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+/* For Desktop */
+@media only screen and (min-width: 990px) {
+  .sidebar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .side-top-block {
+    margin: 0 0.5vw;
+    padding: 7px;
+    background-color: var(--colorHalfBlack);
+    color: var(--colorWhite);
+    cursor: pointer;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+  }
+  .side-top-block li:first-child {
+    border-left: none !important;
+  }
+  .sidebar-top {
+    background-color: var(--colorOffWhite);
+  }
+  .enquire-section {
+    background: none;
+    border: none;
+  }
+}
+
+/* For Mobile */
+@media only screen and (max-width: 990px) {
+  .sidebar-top {
+    display: none;
+  }
+}
+
 /* Overview Section */
+.sub-heading {
+  text-align: center;
+}
+.overview-para {
+  text-align: justify;
+}
 
 /* Pricing */
+/* For Mobile */
 @media only screen and (max-width: 990px) {
   .price-table {
     width: 500px;
@@ -300,7 +376,69 @@ aside {
 .amenities_text {
   font-size: 1.2em;
 }
+
+/* Gallery Section */
+
+.gal-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.gal-img img:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in;
+}
+/* Location Section */
+.location-features i {
+  color: var(--colorPrimary);
+}
+
+/* Virtual Tour Section */
+
+.virtual-visit {
+  height: 400px;
+}
+
+.bg-image {
+  background-image: url("/elixer/img/banners/Desktop_Banner_1.webp");
+  height: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.tour-img {
+  height: fit-content;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.play-btn {
+  font-size: 4vw;
+}
+.overlay-info:hover {
+  transform: scale(0.9);
+  transition: ease-in-out;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+}
+/* For Mobile */
+@media only screen and (max-width: 990px) {
+  .play-btn {
+    font-size: 50px;
+  }
+}
+
+/* Footer */
+.footer-logo {
+  width: 150px;
+}
+
 /* Common Code */
+
 /* OVERLAYS */
 .overlay-container {
   position: relative;
@@ -331,14 +469,99 @@ aside {
 }
 .enq-btn {
   text-transform: uppercase;
-  border: 0.1vw solid #e0e0e0;
+  border: 0.1vw solid var(--colorBorderWhite);
   background: 0 0;
   border-radius: 0;
   background: rgba(0, 0, 0, 0.7);
   transition: 0.5s ease-in-out;
   &:hover {
-    border: 0.1vw solid #e0e0e0;
+    border: 0.1vw solid var(--colorBorderWhite);
     background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+/* About Section */
+.rera-details {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.rera-details span.rera_heading1 {
+  font-weight: 400;
+  width: 15em !important;
+  display: inline-block;
+}
+
+.rera-details span.rera_heading2 {
+  font-weight: 700;
+  width: 15em !important;
+  display: inline-block;
+}
+.rera-details span.rera_heading1,
+.rera-details span.rera_heading2 {
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.9em;
+}
+
+.about-text {
+  font-size: 0.9em;
+  text-align: justify;
+}
+
+.disclaimer {
+  font-size: 0.9em;
+  text-align: justify;
+}
+
+.copyright-text {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 990px) {
+  .footer {
+    padding-bottom: 30px;
+  }
+  .rera_info {
+    font-size: 0.9em;
+  }
+}
+
+.cookie-page {
+  font-size: 0.9em;
+}
+
+/* Action Footer */
+.action-footer-container {
+  margin: 0;
+  padding: 0;
+}
+.action-footer {
+  margin: 0;
+  padding: 7px;
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
+  cursor: pointer;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  font-size: 0.8em;
+}
+
+.side-top-block li:first-child {
+  border-left: none !important;
+}
+
+.action-footer li:first-child {
+  border-left: none !important;
+}
+
+/* For Desktop */
+@media only screen and (min-width: 990px) {
+  .action-footer {
+    display: none;
   }
 }
 
