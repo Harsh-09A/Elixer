@@ -71,8 +71,7 @@ window.onload = function () {
           alert("Message Sent");
           document.getElementById("contact-form").reset();
           if (response.status === 200) {
-            window.location.href =
-              "https://lodha-properties.in/crown-dombivli/thank-you.html";
+            window.location.href = "/elixer/pages/thank-you.html";
           }
         },
         function (error) {
@@ -156,8 +155,7 @@ window.onload = function () {
             alert("Message Sent");
             document.getElementById("contact-form-modal").reset();
             if (response.status === 200) {
-              window.location.href =
-                "https://lodha-properties.in/crown-dombivli/thank-you.html";
+              window.location.href = "/elixer/pages/thank-you.html";
             }
           },
           function (error) {
